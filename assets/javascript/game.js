@@ -12,11 +12,18 @@ var secretLetter = random();
 // game code
 function runGame() {
   var guess = event.key;
+  for (i = 0; i < incorrectGuesses.length; i++) {
+    if (guess === incorrectGuesses[i]) {
+      alert("You've already guessed that letter");
+      return false;
+    }
+  }
   if (guess == secretLetter) {
     wins++;
     secretLetter = random();
     alert("You got it!");
     incorrectGuesses = "";
+    lives = '10';
     random();
   } else {
     incorrectGuesses = incorrectGuesses + guess + " ";
@@ -31,6 +38,7 @@ function runGame() {
     alert("I win!");
     random();
   }
+
 // code to display game stats in document
   var currentWins = window.document.getElementById('wins');
   currentWins.innerText = wins;
