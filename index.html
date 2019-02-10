@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Phychic Game</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+  <script type="text/javascript" src="./assets/javascript/game.js"></script>
+</head>
+<body onKeyPress="runGame();">
+  <div id="main">
+    <div id="header">
+      <img src="assets/images/sun.png" id="sun"> The Psychic Game 
+      <img src="assets/images/moon.png" id="moon">
+    </div>
+    <div id="rule"></div>
+    <p>
+      Guess What Letter I'm Thinking of<br /><br />
+      Wins: <span id="wins">0</span><br /><br />
+      Losses: <span id="losses">0</span><br /><br />
+      Lives Left: <span id="guesses">10</span><br /><br />
+      Your Guesses so far: <span id="incorrectGuesses"></span><br /><br />
+    </p>
+</div>
+</body>
+</html>
