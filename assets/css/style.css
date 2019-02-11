@@ -25,8 +25,9 @@ div#rule {
   height: 2px;
   width: 200px;
   margin: auto;
-  background-color: rgba(61, 61, 61, 0.5);
+  background-color: rgba(61, 61, 61, 0.25);
   margin-bottom: 15px;
+  border-radius: 1px;
   z-index: 1;
 }
 
@@ -52,6 +53,7 @@ p {
 div#title {
   font-weight: 700;
   margin: auto;
+  margin-bottom: 10px;
   text-align: center;
   font-family: Nunito;
   font-size: 18px;
