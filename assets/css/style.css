@@ -25,9 +25,9 @@ div#rule {
   height: 2px;
   width: 200px;
   margin: auto;
-  background-color: rgb(61, 61, 61);
+  background-color: rgba(61, 61, 61, 0.5);
+  margin-bottom: 15px;
   z-index: 1;
-  margin-bottom: 30px;
 }
 
 div#header {
@@ -38,7 +38,7 @@ div#header {
   margin: 5px;
   padding: 0px;
   padding-top: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
   text-align: center;
 }
 
@@ -49,8 +49,12 @@ p {
   font-size: 18px;
 }
 
-span#title {
+div#title {
   font-weight: 700;
+  margin: auto;
+  text-align: center;
+  font-family: Nunito;
+  font-size: 18px;
 }
 
 img#sun {
@@ -61,4 +65,8 @@ img#sun {
 img#moon {
   filter: invert(15%);
   height: 20px;
+}
+
+span#incorrectGuesses {
+  font-weight: 700;
 }

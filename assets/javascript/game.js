@@ -12,6 +12,7 @@ var secretLetter = random();
 // game code
 function runGame() {
   var guess = event.key;
+// previous guesses validation
   for (i = 0; i < incorrectGuesses.length; i++) {
     if (guess === incorrectGuesses[i]) {
       alert("You've already guessed that letter");
